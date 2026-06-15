@@ -1,0 +1,7 @@
+interface:
+  display_name: "Project Bootstrap"
+  short_description: "Initialize your local AI development workspace."
+  default_prompt: "Use $project-bootstrap to initialize this repository for AI-assisted development."
+
+policy:
+  allow_implicit_invocation: false
