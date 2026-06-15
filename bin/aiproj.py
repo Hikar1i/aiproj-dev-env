@@ -344,7 +344,9 @@ def replace_managed_block(existing: str, name: str, body: str) -> str:
     if start in existing and end in existing:
         before, rest = existing.split(start, 1)
         _, after = rest.split(end, 1)
-        return before.rstrip() + "\n\n" + block + after.lstrip("\n")
+        prefix = before.rstrip()
+        separator = "\n\n" if prefix else ""
+        return prefix + separator + block + after.lstrip("\n")
     separator = "\n\n" if existing.strip() else ""
     return existing.rstrip() + separator + block
 

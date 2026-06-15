@@ -18,6 +18,7 @@
 - Moved this tool into its own Git-maintained project directory.
 - Changed POSIX installation to refresh an existing `project-bootstrap` Skill instead of skipping it.
 - Replaced `datetime.UTC` with `datetime.timezone.utc` for older Python 3 compatibility.
+- Fixed managed block replacement so a block at the start of a file does not gain leading blank lines.
 
 ## Operational Notes
 
