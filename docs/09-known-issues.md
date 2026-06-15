@@ -7,6 +7,7 @@
 - The GitHub CLI is not installed in the current Windows environment, so automatic GitHub repository creation is not available from local `gh`.
 - The optional Skill validator may fail if its Python environment lacks `yaml`; use structural checks when that dependency is missing.
 - Git-ignored `.ai-local/` files may not appear in some AI-agent file pickers. Use explicit paths or `rg --hidden --no-ignore`.
+- Avoid Python 3.11-only APIs in the CLI because target servers may run older Python 3 versions.
 
 ## Fix History
 
@@ -16,6 +17,7 @@
 - Installed the `project-bootstrap` Skill into the local Codex skills directory.
 - Moved this tool into its own Git-maintained project directory.
 - Changed POSIX installation to refresh an existing `project-bootstrap` Skill instead of skipping it.
+- Replaced `datetime.UTC` with `datetime.timezone.utc` for older Python 3 compatibility.
 
 ## Operational Notes
 

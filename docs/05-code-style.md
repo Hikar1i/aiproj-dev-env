@@ -4,6 +4,7 @@
 
 - Use the Python standard library unless a dependency removes substantial complexity.
 - Keep `bin/aiproj.py` deterministic and dependency-free.
+- Prefer Python APIs compatible with Python 3.9+ unless a newer version requirement is documented.
 - Prefer small helper functions over adding framework-style abstractions.
 - Use explicit `Path` handling for filesystem operations.
 - Write UTF-8 text with LF newlines.
