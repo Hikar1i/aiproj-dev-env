@@ -15,6 +15,7 @@
 - Changed global `AGENTS.md` installation to use a managed block instead of overwriting the whole file.
 - Installed the `project-bootstrap` Skill into the local Codex skills directory.
 - Moved this tool into its own Git-maintained project directory.
+- Changed POSIX installation to refresh an existing `project-bootstrap` Skill instead of skipping it.
 
 ## Operational Notes
 

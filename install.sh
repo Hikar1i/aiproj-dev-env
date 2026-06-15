@@ -30,7 +30,7 @@ exec python3 "$APP_HOME/bin/aiproj.py" "\$@"
 EOF
 chmod +x "$BIN_DIR/aiproj"
 
-python3 "$APP_HOME/bin/aiproj.py" install-global --kit-root "$APP_HOME"
+python3 "$APP_HOME/bin/aiproj.py" install-global --kit-root "$APP_HOME" --force
 
 echo "Installed aiproj to $APP_HOME"
 echo "Command wrapper: $BIN_DIR/aiproj"

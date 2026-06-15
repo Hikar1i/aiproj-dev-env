@@ -14,7 +14,7 @@ POSIX shell:
 sh ./install.sh
 ```
 
-The installer copies this kit to the user-level install directory, installs the Codex Skill, and updates global Codex instructions.
+The installer copies this kit to the user-level install directory, installs or refreshes the Codex Skill, and updates global Codex instructions.
 
 ## Package Build
 
